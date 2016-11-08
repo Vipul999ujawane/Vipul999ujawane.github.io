@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>Evil Genius</title>
-  
+
   <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="ico/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="ico/apple-icon-72x72.png">
@@ -27,9 +27,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-
+<div class="pre"><img src="Loader.gif"></div>
+<div class="afterload">
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -105,8 +107,8 @@
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Let's meet up!</h4>
-          <p class="left-align light">If you are cool enough to come to this website, contact me. We could have loads of 
-            fun like taking over the world or creating some awesome shit. What say? Contact Me, We have some really good 
+          <p class="left-align light">If you are cool enough to come to this website, contact me. We could have loads of
+            fun like taking over the world or creating some awesome shit. What say? Contact Me, We have some really good
             stuff to talk about. Yeah!</p>
         </div>
       </div>
@@ -138,7 +140,7 @@
         <div class="col l6 s12">
           <h5 class="white-text">Contact Me: </h5>
           <ul>
-            <li class="white-text"><i class="material-icons">person_pin</i> <a class="white-text" href=" https://www.facebook.com/Robotic.vipul">Vipul Ujawane</a></li> 
+            <li class="white-text"><i class="material-icons">person_pin</i> <a class="white-text" href=" https://www.facebook.com/Robotic.vipul">Vipul Ujawane</a></li>
             <li class="white-text"><i class="material-icons">email</i><a class="white-text" href="mailto:vipul999ujawane@gmail.com">  vipul999ujawane@gmail.com </a></li>
             <li class="white-text"><i class="material-icons">phone</i>  +918097091097</li>
             <li class="white-text"><i class="material-icons">location_on</i>  IIT Kharagpur, Kharagpur, India</li>
@@ -151,13 +153,20 @@
       Made by <a class="brown-text text-lighten-3" href="https://www.facebook.com/Robotic.vipul">Vipul Ujawane</a>
       </div>
     </div>
+
   </footer>
+</div>
+<script>
 
-
+</script>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script>$(window).load(function() {
+    $(".pre").fadeOut("slow");
+    $(".afterload").delay(1000).fadeIn("slow");
+  });</script>
 
   </body>
 </html>
