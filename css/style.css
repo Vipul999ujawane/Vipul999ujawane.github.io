@@ -58,12 +58,11 @@ footer.page-footer {
 .afterload{
   display: none;
 }
-.pre{
-  margin: auto;
-       position: absolute;
-       top: 0;
-       left: 0;
-       bottom: 0;
-       right: 0;
-       width: 100%;
+
+@media screen and (orientation: portrait) {
+  img.pre { max-width: 90%; }
+}
+
+@media screen and (orientation: landscape) {
+  img.pre { max-height: 90%; }
 }
