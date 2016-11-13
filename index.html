@@ -30,7 +30,8 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-<div class="pre"><img class="logo" src="Loader.gif"></div>
+<div class="pre" id="logo"><img class="logo" src="Loader.gif"></div>
+<div class="butt" style="text-align:center;" id="goon"><a id="load" class="waves-effect waves-light btn-large indigo"><span id="text">Hello</span></a></div>
 <div class="afterload">
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -164,9 +165,15 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>$(window).load(function() {
-    $(".pre").delay(1000).fadeOut("slow");
-    $(".afterload").delay(2000).fadeIn("slow");
+    $("#logo").delay(1000).fadeOut("slow");
+    $("#goon").delay(2000).fadeIn("slow");
   });</script>
+  <script>
+    $("#goon").click(function(){
+      $("#goon").fadeOut("slow");
+      $(".afterload").delay(750).fadeIn("slow");
+    });
+  </script>
 
   </body>
 </html>

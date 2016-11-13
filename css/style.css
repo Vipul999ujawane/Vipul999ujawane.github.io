@@ -73,3 +73,21 @@ img.logo {
     margin-top:-50%;
     margin-left:-50%;
 }
+.butt{
+  display: none;
+  margin: 10px;
+}
+#load{
+  height: 160px;
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) ;
+}
+#text{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) ;
+  text-align: center;
+  font-size: 200%;
+}
