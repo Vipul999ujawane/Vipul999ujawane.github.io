@@ -78,11 +78,12 @@ img.logo {
   margin: 10px;
 }
 #load{
-  height: 160px;
+  height: 100px;
   width: 350px;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%) ;
+  border-radius: 10px;
 }
 #text{
   position: absolute;
