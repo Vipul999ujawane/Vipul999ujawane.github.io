@@ -62,7 +62,7 @@ div.pre {
     position:absolute;
     max-width:100%;
     max-height:100%;
-    top:50%;
+    top:75%;
     left:50%;
     overflow:visible;
 }
@@ -73,6 +73,12 @@ img.logo1 {
     margin-top:-50%;
     margin-left:-50%;
 }
+
+/*.pre{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}*/
 .butt{
   display: none;
   margin: 10px;
